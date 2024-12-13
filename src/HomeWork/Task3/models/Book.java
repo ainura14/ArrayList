@@ -5,22 +5,21 @@ import HomeWork.Task3.enums.Genre;
 public class Book {
 //    Book(id, name, author, Genre genre)
 
-    private long id;
-    private static int incrementedID = 0;
+    private Long id;
     private String author;
     private Genre genre;
 
-    public Book(long id, String author, Genre genre) {
-        this.id = incrementedID++;
+    public Book(Long id, String author, Genre genre) {
+        this.id = id;
         this.author = author;
         this.genre = genre;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -9,9 +9,9 @@ import java.util.List;
 
 public class DataBase {
 //    Database(List<Library>libraries, List<Book>books,List<Reader>readers)
-    private List<Library> libraries = new ArrayList<>();
-    private List<Book> books = new ArrayList<>();
-    private List<Reader> readers = new ArrayList<>();
+    public static List<Library> libraries = new ArrayList<>();
+    public static List<Book> books = new ArrayList<>();
+    public static List<Reader> readers = new ArrayList<>();
 
 
 }

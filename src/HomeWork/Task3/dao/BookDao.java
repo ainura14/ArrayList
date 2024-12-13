@@ -1,10 +1,10 @@
-package HomeWork.Task3.service;
+package HomeWork.Task3.dao;
 
 import HomeWork.Task3.models.Book;
 
 import java.util.List;
 
-public interface BookService {
+public interface BookDao {
     // add
     String saveBook(Long libraryId, Book book);
 

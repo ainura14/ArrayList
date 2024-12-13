@@ -13,6 +13,13 @@ public class Reader {
     public Reader() {
     }
 
+    public Reader(String fullName, String email, int phoneNumber, Gender gender) {
+        this.fullName = fullName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.gender = gender;
+    }
+
     public Reader(long id, String fullName, String email, int phoneNumber, Gender gender) {
         this.id = id;
         this.fullName = fullName;

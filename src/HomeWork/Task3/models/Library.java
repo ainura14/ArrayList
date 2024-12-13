@@ -4,19 +4,31 @@ import java.util.List;
 
 public class Library {
 //    Library(id, name, address, List<Book>books, List<Reader>readers)
-    private long id;
+    private Long id;
     private String name;
     private String address;
     private List<Book> books;
+    private List<Reader>readers;
 
     public Library() {
     }
 
-    public Library(long id, String name, String address, List<Book> books) {
+    public Library(Long id, String name, String address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+    }
+    public Library(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public Library(Long id, String name, String address, List<Book> books, List<Reader> readers) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.books = books;
+        this.readers = readers;
     }
 
     public long getId() {
@@ -49,6 +61,14 @@ public class Library {
 
     public void setBooks(List<Book> books) {
         this.books = books;
+    }
+
+    public List<Reader> getReaders() {
+        return readers;
+    }
+
+    public void setReaders(List<Reader> readers) {
+        this.readers = readers;
     }
 
     @Override
